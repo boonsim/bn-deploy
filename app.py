@@ -15,7 +15,7 @@ def home():
 def classifier():
     img_url = request.values['p_image_url']
     a = cv.image(img_url)
-    feat = a.getresnet50()
+    feat = a.getmobilenet()
     modFile = 'CDmodel.mod'
     model = pickle.load(open(modFile,'rb'))
     
