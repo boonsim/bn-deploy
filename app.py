@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return 'Hello World Punn !'
+    return 'Hello World'
 
 @app.route('/prediction')
 def classifier():
